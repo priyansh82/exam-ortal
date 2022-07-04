@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function done(){
+    var c=0;
+    var q1= document.quiz.q1.value;  
+    var q2= document.quiz.q2.value;
+    var q3= document.quiz.q3.value;
+    var q4= document.quiz.q4.value;
+    var q5= document.quiz.q5.value;
+    var q6= document.quiz.q6.value;
+    var q7= document.quiz.q7.value;
+    var q8= document.quiz.q8.value;
+    var q9= document.quiz.q9.value;
+    var q10= document.quiz.q10.value;
+    if(q1=="hyper text markup language") {
+        c++;
+        c++;
+    }
+    else{ c--;}
+    if(q2="4") {
+        c++;
+        c++;
+
+    }
+    else{ c--;}
+    if(q3=="pycham") {
+        c++;
+        c++;
+    }
+    else{ c--;}
+    if(q4=="cascading style sheet") {
+        c++;
+        c++;}
+        else{ c--;}
+    if(q5=="charles babbage") {
+        c++;
+        c++;}
+        else{ c--;}
+        if(q6=="both of above") {
+            c++;c++;
+        }
+        else{ c--;}
+        if(q7=="italics") {
+            c++;
+            c++;
+        }
+        else{ c--;}
+        if(q8=="border-left-color") {
+            c++;
+            c++;
+        }
+        else{ c--;}
+        if(q9=="font-family") {
+            c++;c++;
+        }
+        else{ c--;}
+        if(q10=="mm") {
+            c++;
+            c++;
+        }
+        else{ c--;}
+
+console.log(c);
+            if(c>=15){
+            alert("Your score is " +c);
+            window.open("/certi")}
+            // window.open("certificate.html")}
+            // location.replace("/1.html")}
+            else
+                window.open("/try")
+            }
+            
+            var time= 240;
+           var timer= setInterval(function(){
+                time--;
+        
+                if(time>=0){
+                    id=document.getElementById("b");
+                     id.innerHTML =time;
+
+                }
+                if(time===0){
+                   alert("time's up")
+                   done(); 
+                }
+            },1000)
+        
+    </script>
+    
+    <style>
+        body {
+    /* background-color: lightpink; */
+    background: linear-gradient(lightskyblue,white,lightskyblue,white,lightskyblue,white,lightskyblue);
+    color: black;
+    font-size: 25px;
+    font-family:initial;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 50px;
+    border: black 4px dashed;
+}
+.e{
+    width: 100%;
+    height: 50px;
+    
+    position: fixed;
+}
+*{
+    margin: 10px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+#b1{
+    margin-left: 250px;
+
+}
+#button {
+    background-color:black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 420px;
+    font-size: xx-large;
+    border: 20px 5px;
+}
+h1{
+    margin-left: 350px;
+    color: darkblue;
+    font-family: initial;
+    font-size: 70px;
+    background-color: cadetblue;
+    margin-right: 300px;
+    border-radius: 5px;
+}
+#b{
+margin-left: 1000px;
+border:black 3px solid;
+border-radius: 100px;
+width: 55px;
+margin-top: 15px;
+
+}
+#a1{
+    margin-top:10px;
+}
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="e"> 
+        <nav id="b1"> 
+                        <h2 id="b">40</h2> 
+            </nav>
+        </div>
+   
+ <h1>    *****Entrance Test*****</h1><br>
+  <div class="p"> <form name ="quiz" id="a1">
+        <div>
+            <p>1)What is full form of html?</p>
+            <p><input type="radio" name="q1" value="hyper text many language">hyper text many language
+            <input type="radio" name="q1" value="hyper text more language">hyper text more language</p>
+            <p><input type="radio" name="q1" value="high text many language">high text many language
+            <input type="radio" name="q1" value="hyper text markup language">hyper text markup language</p>
+        </div>
+        <div>
+            <p>2)What is the value of float data type?</p>   
+            <p><input type="radio" name="q2" value="5">5              
+            <input type="radio" name="q2" value="3">3</p>
+            <p></p><input type="radio" name="q2" value="4">4
+            <input type="radio" name="q2" value="1">1</p>
+
+        </div>
+        <div>
+            <p>3)In the folowing which is not a programming language?</p>
+            <p><input type="radio" name="q3" value="java">java
+        <input type="radio" name="q3" value="pycham">pycham</p>
+            <p><input type="radio" name="q3" value="php">php
+            <input type="radio" name="q3" value="python">python</p>
+        </div>
+        <div>
+            <p>4)What is the full form of css?</p>
+            <p><input type="radio" name="q4" value="cascading style sheet">cascading style sheet
+        <input type="radio" name="q4" value="cascading store sheet">cascading store sheet</p>
+            <p><input type="radio" name="q4" value="control style sheet">control style sheet
+        <input type="radio" name="q4" value="cascading style source">cascading style source</p>
+        </div>
+        <div>
+            <p>5)Who is the father of computer?</p>
+            <p><input type="radio" name="q5" value="dennis ritchie">dennis ritchie 
+            <input type="radio" name="q5" value = "bjare stroustrup">bjare stroustrup</p>
+             <p><input type="radio" name="q5" value = "linus torvalds">linus torvalds
+            <input type="radio" name="q5" value = "charles babbage">charles babbage</p>
+
+        </div>
+        <div><p>6) Which of the following is a valid type of function javascript supports?
+            </p>
+            <p><input type="radio" name="q6" value="named function">named function
+        <input type="radio" name="q6" value="anonymous function">anonymous function</p>
+            <p><input type="radio" name="q6" value="both of above">both of above
+        <input type="radio" name="q6" value="none of above">none of above</p>
+        </div>
+        <div><p>7) Which of the following function of string object causes a string to be italic? 
+            </p>
+            <p><input type="radio" name="q7" value="fixed">fixed
+        <input type="radio" name="q7" value="fontcolor">fontcolor</p>
+            <p><input type="radio" name="q7" value="fontsize">fontsize
+        <input type="radio" name="q7" value="italics">italics</p>
+        </div>
+        <div><p>8)which of the following property changes the color of left border? 
+            </p>
+            <p><input type="radio" name="q8" value="boader-top-color">boader-top-color
+        <input type="radio" name="q8" value="border-left-color">border-left-color</p>
+            <p><input type="radio" name="q8" value="border-right -color">border-right-color
+<input type="radio" name="q8" value="border-bottom -color">border-bottom-color</p>
+        </div>
+        <div><p>9) Which of the following property is used to change the face of the font?
+            </p>
+            <p><input type="radio" name="q9" value="font-family">font-family
+            <input type="radio" name="q9" value="font-style">font-style</p>
+            <p><input type="radio" name="q9" value="font-variant">font-variant
+            <input type="radio" name="q9" value="font-weight">font-weight</p>
+        </div>
+        <div><p>10)Which of the following defines a measurement in millimeters?
+            </p>
+            <p><input type="radio" name="q10" value="in">in
+            <input type="radio" name="q10" value="mm">mm</p>
+            <p><input type="radio" name="q10" value="pc">pc
+            <input type="radio" name="q10" value="pt">pt</p>
+        </div>
+           <input type="button" name="" id="button" value="submitt" onclick="done()">
+        </div>
+     
+    </form>
+    </body>

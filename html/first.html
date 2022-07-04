@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+            margin: 0%;
+            padding:0%;
+            font-family: sans-serif;
+            background-color: rgb(19, 67, 114);
+        }
+        .box{
+            width: 300px;
+            background-color: black;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        h1{
+            color: white;
+        }
+        .box input[type="text"] ,.box input[type="password"] {
+            border: 0;
+            background: none;
+            border: 2px solid skyblue;
+            margin: 20px auto;
+            text-align: center;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .box input[type="text"]:hover ,.box input[type="password"]:hover{
+            width: 280px;
+            border-color: limegreen;
+        }
+        .box input[type="text"]:focus ,.box input[type="password"]:focus{
+            width: 280px;
+            border-color: limegreen;
+        }
+        .box input[type="submit"] {
+            border: 0;
+            background: none;
+            border: 2px solid skyblue;
+            margin: 20px auto;
+            text-align: center;
+            padding: 14px 40px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            border-color: limegreen;
+        }
+        .box input[type="submit"]:hover{
+            background: limegreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="/a" method="POST" class="box">
+      <h1>Sign up</h1>
+      
+  <input type="text"  name="a1" placeholder="name"> <br> <br>
+  <p style="color:lightslategray;">
+    Gender:
+  <input type="radio" name="a2" value="male">MALE
+  <input type="radio" name="a2" value="female">FEMALE<br>
+</p>
+  <input type="text"  name="a3" placeholder="email" > <br> <br>
+  <input type="text"  name="a4" placeholder="phone no."> <br> <br>
+ <input type="password" name="a5" placeholder="password"> <br><br>
+
+  <input type="submit" placeholder="submit">
+ 
+</form>
+
+</body>
+</html>

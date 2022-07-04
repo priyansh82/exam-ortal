@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     input{
+    height:35px;
+
+    background:linear-gradient(skyblue,white,pink);
+    color:crimson;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 20px;
+    }
+    h1{
+    height: 20px;
+    width: 20%;
+    color: blueviolet;
+    font-size: 20px;
+    font-family: cursive;
+    }
+    h3{
+        height: 40px;
+        width: 30%;
+        font-size: 30px;
+        color:indianred;
+        font-style: oblique;
+        background :linear-gradient(cyan,skyblue,pink) ;
+    }
+    #r{
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(cornflowerblue,cornsilk,lightyellow);
+    }
+
+    </style>
+    <script>
+        function pass(){
+        len = document.getElementById('a').value
+        len = len.length
+        if(len+1<8){
+            document.getElementById('b').innerHTML="Too short"
+            document.getElementById('b').style.color="red"
+        }
+        else if(len+1>=8 && len+1<=12){
+            document.getElementById('b').innerHTML="strong"
+            document.getElementById('b').style.color="green"
+        }
+        else{
+            document.getElementById('b').innerHTML="Too large"
+            document.getElementById('b').style.color="blue"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="r">
+        <center>
+    <form action="/change" method="post">
+        <h1>Enter email:<i class="fa fa-envelope" style="font-size:30px"></i></h1><input type="email" name="a" required placeholder="email"><br><br>
+        <h1>Enter new password:<i class='fa fa-key' style='font-size:30px'></i></h1><input type="password" name="b" required placeholder="password"><br><br>
+        <input type="submit">
+        </form>
+        </center>
+        
+    </div>
+</body>
+</html>
